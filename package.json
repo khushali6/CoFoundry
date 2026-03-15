@@ -1,0 +1,26 @@
+{
+  "name": "startup-intelligence",
+  "version": "1.0.0",
+  "description": "Startup discovery + hiring intelligence powered by TinyFish Web Agent",
+  "main": "pipeline.js",
+  "scripts": {
+    "start": "node pipeline.js",
+    "scrape:ph": "SOURCES=producthunt node pipeline.js",
+    "scrape:yc": "SOURCES=yc node pipeline.js",
+    "scrape:all": "SOURCES=producthunt,yc,crunchbase node pipeline.js",
+    "filter:react": "SOURCES=producthunt,yc TECH_FILTER=React node pipeline.js",
+    "filter:ai": "SOURCES=producthunt,yc TECH_FILTER=AI,Python node pipeline.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "@xenova/transformers": "^2.17.2",
+    "better-sqlite3": "^12.6.2",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "neo4j-driver": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
