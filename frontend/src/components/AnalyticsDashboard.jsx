@@ -7,22 +7,55 @@ import { MapPin, Cpu, Briefcase, Globe as GlobeIcon, TrendingUp } from 'lucide-r
 
 const COLORS = ['#6366f1', '#a855f7', '#ec4899', '#f43f5e', '#fb923c', '#fbbf24', '#22c55e', '#06b6d4'];
 
-const AnalyticsDashboard = () => {
+const AnalyticsDashboard = ({ startups = [] }) => {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-    fetch(`${apiUrl}/api/analytics`)
-      .then(res => res.json())
-      .then(setData)
-      .finally(() => setLoading(false));
-  }, []);
+    if (!startups.length) return;
 
-  if (loading) return (
+    // --- CALCULATE ANALYTICS CLIENT-SIDE ---
+
+    // 1. Locations
+    const locMap = {};
+    startups.forEach(s => {
+      const loc = s.location || 'Remote / Global';
+      locMap[loc] = (locMap[loc] || 0) + 1;
+    });
+    const startupLocations = Object.entries(locMap)
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 10);
+
+    // 2. Technologies
+    const techMap = {};
+    startups.forEach(s => {
+      if (s.techStack) {
+        s.techStack.forEach(t => {
+          const name = t.technology;
+          techMap[name] = (techMap[name] || 0) + 1;
+        });
+      }
+    });
+    const technologies = Object.entries(techMap)
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 15);
+
+    // 3. Sources
+    const sourceMap = {};
+    startups.forEach(s => {
+      const src = s.source || 'Unknown';
+      sourceMap[src] = (sourceMap[src] || 0) + 1;
+    });
+    const sources = Object.entries(sourceMap).map(([name, count]) => ({ name, count }));
+
+    setData({ startupLocations, technologies, sources });
+  }, [startups]);
+
+  if (!data) return (
     <div className="glass-panel" style={{ padding: '40px', textAlign: 'center', color: '#fff' }}>
       <div className="pulse-loader" />
-      <p style={{ marginTop: '20px', opacity: 0.6 }}>Synchronizing Location Intelligence...</p>
+      <p style={{ marginTop: '20px', opacity: 0.6 }}>Aggregating Startup Intelligence...</p>
     </div>
   );
 

@@ -19,11 +19,21 @@ function App() {
   const fetchStartups = async () => {
     try {
       setError(null)
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-      const res = await fetch(`${apiUrl}/api/startups`)
-      if (!res.ok) throw new Error('Failed to fetch startups')
-      const data = await res.json()
-      setStartups(data)
+      const isStatic = import.meta.env.VITE_STATIC_MODE === 'true';
+      
+      if (isStatic) {
+        console.log("🚀 Running in Static Data Mode (No Backend)");
+        const res = await fetch('/data.json')
+        if (!res.ok) throw new Error('Data file not found. Run node export_json.js first!')
+        const data = await res.json()
+        setStartups(data)
+      } else {
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const res = await fetch(`${apiUrl}/api/startups`)
+        if (!res.ok) throw new Error('Failed to fetch startups from backend')
+        const data = await res.json()
+        setStartups(data)
+      }
     } catch (err) {
       setError(err.message)
     } finally {
@@ -33,6 +43,9 @@ function App() {
 
   const triggerVectorSearch = async () => {
     if (!search.trim()) return
+    const isStatic = import.meta.env.VITE_STATIC_MODE === 'true';
+    if (isStatic) return; // Vector search requires backend
+
     setLoading(true)
     setError(null)
     try {
@@ -107,7 +120,7 @@ function App() {
 
 
       {/* ── Dashboard Tab ── */}
-      {activeTab === 'dashboard' && <AnalyticsDashboard />}
+      {activeTab === 'dashboard' && <AnalyticsDashboard startups={startups} />}
 
 
       {/* ── Feed Tab ── */}

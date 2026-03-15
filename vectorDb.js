@@ -1,17 +1,22 @@
 // vectorDb.js
 // Handles embedding generation and simulated Pinecone/Weaviate/Chroma integration
-// If API keys are missing, falls back to a 100% local SQLite-based vector table.
+// If API keys are missing, falls back to a 100% cloud-native Turso-based vector table.
 const { pipeline } = require('@xenova/transformers');
 const { db } = require('./db');
 
 // Initialize local SQLite fallback vector DB table
-db.exec(`
-  CREATE TABLE IF NOT EXISTS vector_store (
-    startup_id INTEGER PRIMARY KEY REFERENCES startups(id) ON DELETE CASCADE,
-    text_content TEXT,
-    embedding TEXT
-  );
-`);
+async function initVectorSchema() {
+  await db.execute(`
+    CREATE TABLE IF NOT EXISTS vector_store (
+      startup_id INTEGER PRIMARY KEY REFERENCES startups(id) ON DELETE CASCADE,
+      text_content TEXT,
+      embedding TEXT
+    );
+  `);
+}
+
+// Fire and forget schema init
+initVectorSchema().catch(err => console.error("Vector Schema Init Failed:", err));
 
 let extractor;
 async function getExtractor() {
@@ -55,19 +60,31 @@ async function upsertVector(startup) {
   const { id, name, description, brand_summary, potential_features, industry } = startup;
   
   // Also stringify tech and roles for semantic search
-  const techStack = db.prepare("SELECT technology FROM tech_stack WHERE startup_id = ?").all(id).map(t => t.technology).join(", ");
-  const roles = db.prepare("SELECT title FROM jobs WHERE startup_id = ?").all(id).map(j => j.title).join(", ");
+  const techRes = await db.execute({
+    sql: "SELECT technology FROM tech_stack WHERE startup_id = ?",
+    args: [id]
+  });
+  const techStack = techRes.rows.map(t => t.technology).join(", ");
+
+  const jobRes = await db.execute({
+    sql: "SELECT title FROM jobs WHERE startup_id = ?",
+    args: [id]
+  });
+  const roles = jobRes.rows.map(j => j.title).join(", ");
   
   const textContent = `${name}. ${description || ''} ${brand_summary || ''}. Features: ${potential_features || ''}. Industry: ${industry || ''}. Tech: ${techStack}. Roles: ${roles}.`;
   
   const embedding = await computeEmbedding(textContent);
   if (!embedding || embedding.length === 0) return;
   
-  db.prepare(`
-    INSERT INTO vector_store (startup_id, text_content, embedding)
-    VALUES (?, ?, ?)
-    ON CONFLICT(startup_id) DO UPDATE SET text_content=excluded.text_content, embedding=excluded.embedding
-  `).run(id, textContent, JSON.stringify(embedding));
+  await db.execute({
+    sql: `
+      INSERT INTO vector_store (startup_id, text_content, embedding)
+      VALUES (?, ?, ?)
+      ON CONFLICT(startup_id) DO UPDATE SET text_content=excluded.text_content, embedding=excluded.embedding
+    `,
+    args: [id, textContent, JSON.stringify(embedding)]
+  });
   
   console.log(`🧠 Synced vector for ${name}`);
 }
@@ -78,7 +95,8 @@ async function vectorSearch(queryText, topK = 5) {
     throw new Error("Failed to compute query embedding. The local ML model may be offline, failing to download, or missing.");
   }
   
-  const vectors = db.prepare("SELECT startup_id, embedding FROM vector_store").all();
+  const res = await db.execute("SELECT startup_id, embedding FROM vector_store");
+  const vectors = res.rows;
   
   const scored = vectors.map(v => {
     let dbVec;

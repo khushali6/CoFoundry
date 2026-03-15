@@ -1,0 +1,707 @@
+[
+  {
+    "id": 12,
+    "name": "Cardinal",
+    "description": "AI Platform for Precision Outbound",
+    "website": "https://trycardinal.ai/",
+    "source": "Y Combinator",
+    "industry": "B2B, AI",
+    "funding": "YC",
+    "brand_summary": "Cardinal uses AI to help sales teams identify and engage with prospects more effectively through precision outbound targeting.",
+    "potential_features": "AI-powered prospecting, personalized outbound messaging, precision targeting platform.",
+    "market_insight": null,
+    "location": "Remote",
+    "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/7f54038f84e639bce5c45d1756018b94f17f6125.png",
+    "latitude": null,
+    "longitude": null,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:34:32",
+    "techStack": [],
+    "jobs": [],
+    "employees": []
+  },
+  {
+    "id": 11,
+    "name": "Wideframe",
+    "description": "AI coworker for video editors to ship more video faster",
+    "website": "https://try.wideframe.com",
+    "source": "Y Combinator",
+    "industry": "B2B, AI",
+    "funding": "YC",
+    "brand_summary": "An AI agent for video work outside the NLE, acting as a coworker to help editors automate tedious tasks and ship content faster.",
+    "potential_features": "Automated video editing workflows, AI-driven asset management, workflow acceleration for professional editors.",
+    "market_insight": null,
+    "location": "Remote",
+    "logo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/c9ef6a07ef7a5cedb488134e270a0deeb4fae9b4.png",
+    "latitude": null,
+    "longitude": null,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:34:31",
+    "techStack": [],
+    "jobs": [],
+    "employees": []
+  },
+  {
+    "id": 10,
+    "name": "Martini",
+    "description": "Collaborative AI-native filmmaking for professionals",
+    "website": "https://martini.film/",
+    "source": "Y Combinator",
+    "industry": "B2B, Engineering, Product and Design",
+    "funding": "YC",
+    "brand_summary": "Martini provides a collaborative, AI-native filmmaking environment for professionals, simulating a virtual film set for AI-generated video.",
+    "potential_features": "Collaborative AI video production, professional-grade filmmaking tools, virtual set simulation.",
+    "market_insight": "Martini’s strategic unique value proposition lies in its unified 'collaborative film set' and professional timeline interface, which bridges elite AI generation models like Sora and Kling directly into professional NLE workflows via XML export. However, the firm faces critical risks from its heavy dependency on third-party APIs, where providers may pivot to direct professional competition or restrict access to maintain their own market share. Potential competitors include direct full-stack AI video platforms like Runway and Luma AI, as well as indirect threats from creative incumbents like Adobe and Canva that are aggressively integrating generative video into their established B2B ecosystems.",
+    "location": "Remote",
+    "logo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/400546c4b972582d5621e035caf3c5644cd00725.png",
+    "latitude": null,
+    "longitude": null,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:34:27",
+    "techStack": [
+      {
+        "technology": "Next.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "Tailwind CSS",
+        "category": "frontend"
+      },
+      {
+        "technology": "Radix UI",
+        "category": "frontend"
+      },
+      {
+        "technology": "Node.js",
+        "category": "backend"
+      },
+      {
+        "technology": "Google Analytics",
+        "category": "analytics"
+      },
+      {
+        "technology": "Vercel",
+        "category": "cloud"
+      },
+      {
+        "technology": "Typeform",
+        "category": "other"
+      },
+      {
+        "technology": "Google OAuth",
+        "category": "other"
+      },
+      {
+        "technology": "Vimeo",
+        "category": "other"
+      },
+      {
+        "technology": "YouTube",
+        "category": "other"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 18,
+        "startup_id": 10,
+        "name": "Koh Terai",
+        "role": "Founder",
+        "linkedin": "https://www.linkedin.com/in/kohterai/"
+      },
+      {
+        "id": 19,
+        "startup_id": 10,
+        "name": "Long Hoang",
+        "role": "Founder",
+        "linkedin": "https://www.linkedin.com/in/longh/"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Condor Energy",
+    "description": "Energy OS enabling reliable, cheap and sustainable electricity supply",
+    "website": "https://www.condor.energy/",
+    "source": "Y Combinator",
+    "industry": "Industrials, Energy",
+    "funding": "YC",
+    "brand_summary": "Condor Energy develops an AI-powered operating system for the electricity supply chain to ensure reliability and sustainability.",
+    "potential_features": "Power grid planning AI, energy supply optimization, sustainable infrastructure management.",
+    "market_insight": "Condor Energy’s strategic value proposition centers on its 'Energy OS,' an AI-driven platform that consolidates fragmented consumption and market data to optimize procurement, hedging, and ROI for decentralized assets like BESS and solar. The startup faces significant market pitfalls in the form of long industrial sales cycles and technical risks surrounding the integration of legacy hardware with its modern SaaS architecture, competing against both traditional giants like Schneider Electric and agile entrants like GridX or Stem. Its success hinges on transforming complex energy data into actionable financial intelligence for risk-averse sectors like Industrials and Data Centers, effectively de-risking the energy transition for large-scale consumers.",
+    "location": "Remote",
+    "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/6c61a438eef6d3a1fe29d67dd180ddaaac257b9d.png",
+    "latitude": null,
+    "longitude": null,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:31:17",
+    "techStack": [
+      {
+        "technology": "Next.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "React",
+        "category": "frontend"
+      },
+      {
+        "technology": "Tailwind CSS",
+        "category": "frontend"
+      },
+      {
+        "technology": "Calendly",
+        "category": "other"
+      },
+      {
+        "technology": "SimpleBar",
+        "category": "other"
+      },
+      {
+        "technology": "Node.js",
+        "category": "backend"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 15,
+        "startup_id": 9,
+        "name": "Jean Costa de Beauregard",
+        "role": "Founder and CEO",
+        "linkedin": "https://www.linkedin.com/in/jean-costa-de-beauregard/"
+      },
+      {
+        "id": 16,
+        "startup_id": 9,
+        "name": "Clément Grivel",
+        "role": "Founder and CTO",
+        "linkedin": "https://www.linkedin.com/in/clément-grivel/"
+      },
+      {
+        "id": 17,
+        "startup_id": 9,
+        "name": "Florian Pérocheau",
+        "role": "Founder and CPO",
+        "linkedin": "https://www.linkedin.com/in/florian-perocheau/"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Resonate",
+    "description": "The first AI-native messaging platform",
+    "website": "https://resonate.audio/",
+    "source": "Y Combinator",
+    "industry": "Consumer",
+    "funding": "YC",
+    "brand_summary": "Resonate is an AI-native messaging platform focused on enhancing communication through integrated AI technologies.",
+    "potential_features": "AI-powered messaging, voice-integrated chat, smart communication tools.",
+    "market_insight": "Resonate’s Strategic Unique Value Proposition lies in its AI-native architecture that transforms asynchronous voice messaging into interactive, emotionally-indexed transcripts featuring automated filler-word removal and text-based audio editing. While its communication coaching and video-conversion tools offer a compelling consumer hook, the startup faces significant technical risks in maintaining sentiment accuracy and substantial platform risk from incumbents like WhatsApp or iMessage integrating similar features. Direct competitors include major messaging platforms, while indirect competition stems from specialized audio-productivity tools like Descript and Otter.ai that target the same high-utility voice market.",
+    "location": "Remote",
+    "logo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/9903174db51f3de90de76ceb38f9ac069822e27f.png",
+    "latitude": null,
+    "longitude": null,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:28:39",
+    "techStack": [
+      {
+        "technology": "Next.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "React",
+        "category": "frontend"
+      },
+      {
+        "technology": "styled-components",
+        "category": "frontend"
+      },
+      {
+        "technology": "Vercel",
+        "category": "cloud"
+      },
+      {
+        "technology": "HTML5 Canvas",
+        "category": "other"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 14,
+        "startup_id": 8,
+        "name": "Sam Kaplan",
+        "role": "Founder",
+        "linkedin": "https://www.linkedin.com/in/samrkaplan/"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Shofo",
+    "description": "The World's Largest Video Library",
+    "website": "https://shofo.ai/",
+    "source": "Y Combinator",
+    "industry": "B2B, Infrastructure, AI",
+    "funding": "YC",
+    "brand_summary": "Shofo is building a massive index of video content, serving as the 'Common Crawl' for video to support AI training and discovery.",
+    "potential_features": "Large-scale video indexing, AI video search engine, data sourcing for AI model training.",
+    "market_insight": "Shofo offers a Strategic Unique Value Proposition as the world's largest video library, providing massive-scale, pre-labeled, and segmented datasets from social media to help AI labs bypass the intensive data engineering required for vision models. Potential market pitfalls include substantial legal and regulatory hurdles regarding data scraping and privacy, coupled with the technical risk of maintaining labeling accuracy at petabyte scales. Competitors range from established annotation firms like Scale AI and Labelbox to specialized data vendors and the source platforms themselves. This B2B infrastructure play positions Shofo as a vital, high-growth supplier within the generative video and AI training ecosystem.",
+    "location": "San Francisco, CA",
+    "logo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/f43131b3414c6280090a3954af939554fc30b6ff.png",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:25:38",
+    "techStack": [
+      {
+        "technology": "Tailwind CSS",
+        "category": "frontend"
+      },
+      {
+        "technology": "Next.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "Vercel",
+        "category": "cloud"
+      },
+      {
+        "technology": "Hugging Face",
+        "category": "other"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 10,
+        "startup_id": 7,
+        "name": "Bryan Hong",
+        "role": "Founder & CEO",
+        "linkedin": "https://www.linkedin.com/in/zixihong"
+      },
+      {
+        "id": 11,
+        "startup_id": 7,
+        "name": "Andre Braga",
+        "role": "Founder & Head of AI",
+        "linkedin": "https://www.linkedin.com/in/andre-braga-nlp"
+      },
+      {
+        "id": 12,
+        "startup_id": 7,
+        "name": "Braiden Dishman",
+        "role": "Founder & COO",
+        "linkedin": "https://www.linkedin.com/in/braiden-dishman/"
+      },
+      {
+        "id": 13,
+        "startup_id": 7,
+        "name": "Alexzendor Misra",
+        "role": "Founder & CTO",
+        "linkedin": "https://www.linkedin.com/in/alexzendor-misra-15907a23b/"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Wayco",
+    "description": "AI operator for medlegal cases",
+    "website": "https://wayco.ai/",
+    "source": "Y Combinator",
+    "industry": "B2B, Legal",
+    "funding": "YC",
+    "brand_summary": "Wayco provides an AI operator designed to automate and streamline the administrative and analytical aspects of medlegal cases.",
+    "potential_features": "Medlegal document analysis, automated case operations, legal workflow optimization.",
+    "market_insight": "Wayco’s unique value proposition centers on its AI-native automation of the medical-legal lifecycle, specifically streamlining record review and patient-provider matching to achieve significant operational efficiency for law firms and insurers. However, the platform faces substantial technical risks regarding LLM accuracy in high-stakes legal chronologies and the heavy regulatory burden of maintaining HIPAA compliance for sensitive health data. It must navigate a competitive landscape occupied by direct rivals like EvenUp and Casetext, while indirectly disrupting traditional, labor-heavy medical-legal consulting services through scalable automation.",
+    "location": "Remote",
+    "logo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/31e9da17e14b0eee1baf0970dbe44286fc62eb22.png",
+    "latitude": null,
+    "longitude": null,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:23:21",
+    "techStack": [
+      {
+        "technology": "Vercel",
+        "category": "cloud"
+      },
+      {
+        "technology": "Next.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "Cal.com",
+        "category": "other"
+      },
+      {
+        "technology": "Vercel Analytics",
+        "category": "analytics"
+      },
+      {
+        "technology": "OpenAI",
+        "category": "backend"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 9,
+        "startup_id": 6,
+        "name": "Iqbol Temirkhojaev",
+        "role": "Founder",
+        "linkedin": "https://www.linkedin.com/in/iqbolkhoja/"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Unifold",
+    "description": "Multi-chain deposit and payment infrastructure",
+    "website": "https://unifold.io",
+    "source": "Y Combinator",
+    "industry": "Fintech, Payments, Crypto",
+    "funding": "YC",
+    "brand_summary": "Unifold offers universal deposit infrastructure for on-chain applications, facilitating seamless multi-chain payments.",
+    "potential_features": "Multi-chain deposit support, unified payment interface, web3 deposit infrastructure.",
+    "market_insight": "Unifold’s Strategic Unique Value Proposition lies in its unified multi-chain deposit infrastructure that abstracts bridging logistics, gas management, and token fragmentation into a single, developer-friendly API for consumer applications. Potential technical and market risks include cross-chain settlement vulnerabilities, execution slippage in fragmented liquidity pools, and the complexities of navigating evolving global regulatory frameworks for non-custodial payment flows. Key competitors range from established fiat-to-crypto on-ramps like Stripe and MoonPay to decentralized interoperability layers and routing protocols such as Li.Fi and Socket.",
+    "location": "New York, NY",
+    "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/18022eca0289ec27600e4e7461ba17298b397ffa.png",
+    "latitude": 40.7128,
+    "longitude": -74.006,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:20:59",
+    "techStack": [
+      {
+        "technology": "Next.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "React",
+        "category": "frontend"
+      },
+      {
+        "technology": "Tailwind CSS",
+        "category": "frontend"
+      },
+      {
+        "technology": "Shadcn UI",
+        "category": "frontend"
+      },
+      {
+        "technology": "Lucide React",
+        "category": "frontend"
+      },
+      {
+        "technology": "Vercel",
+        "category": "cloud"
+      },
+      {
+        "technology": "Mintlify",
+        "category": "other"
+      },
+      {
+        "technology": "Ethereum",
+        "category": "other"
+      },
+      {
+        "technology": "Solana",
+        "category": "other"
+      },
+      {
+        "technology": "Bitcoin",
+        "category": "other"
+      },
+      {
+        "technology": "TypeScript",
+        "category": "other"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 6,
+        "startup_id": 5,
+        "name": "Hau Chu",
+        "role": "Founder/Chief Engineer",
+        "linkedin": "https://www.linkedin.com/in/hauchu1998"
+      },
+      {
+        "id": 7,
+        "startup_id": 5,
+        "name": "Timothy Chung",
+        "role": "Founder",
+        "linkedin": "https://www.linkedin.com/in/timchunght"
+      },
+      {
+        "id": 8,
+        "startup_id": 5,
+        "name": "Quang Huynh",
+        "role": "Founder",
+        "linkedin": "https://www.linkedin.com/in/quang-huynh-468488305/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Carrot Labs",
+    "description": "Continuous Fine-Tuning for AI Models",
+    "website": "https://carrotlabs.ai/",
+    "source": "Y Combinator",
+    "industry": "B2B, AI",
+    "funding": "YC",
+    "brand_summary": "Carrot Labs provides a platform for continuous fine-tuning of LLMs, enabling companies to keep their models updated with the latest data.",
+    "potential_features": "Continuous learning pipelines, automated model fine-tuning, data-driven LLM optimization.",
+    "market_insight": "Carrot Labs delivers a Strategic UVP through a 'reliability loop' that converts production AI traces into a continuous improvement engine, enabling companies to build proprietary intelligence rather than relying on static prompts. Potential market pitfalls include significant technical dependencies on high-fidelity trace data and the risk of model degradation if automated 'evals' fail to capture nuanced shifts in user intent or business logic. The startup faces direct competition from AI observability platforms like LangSmith and Helicone, as well as indirect pressure from incumbent MLOps providers and native fine-tuning tools offered by model providers like OpenAI.",
+    "location": "San Francisco, CA",
+    "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/6c9d56ba5bab1fb6c9a7734a1a8aab7b6fbc48ed.png",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:18:37",
+    "techStack": [
+      {
+        "technology": "Next.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "Tailwind CSS",
+        "category": "frontend"
+      },
+      {
+        "technology": "Swiper.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "Python",
+        "category": "backend"
+      },
+      {
+        "technology": "PostHog",
+        "category": "analytics"
+      },
+      {
+        "technology": "Google APIs",
+        "category": "other"
+      },
+      {
+        "technology": "OpenAI API",
+        "category": "other"
+      },
+      {
+        "technology": "Anthropic API",
+        "category": "other"
+      },
+      {
+        "technology": "LiteLLM",
+        "category": "other"
+      },
+      {
+        "technology": "Cal.com",
+        "category": "other"
+      },
+      {
+        "technology": "Y Combinator",
+        "category": "other"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 4,
+        "startup_id": 4,
+        "name": "Christopher Acker",
+        "role": "Founder",
+        "linkedin": "https://www.linkedin.com/in/christopher-acker-4711a3177/"
+      },
+      {
+        "id": 5,
+        "startup_id": 4,
+        "name": "Yuta Baba",
+        "role": "Co-Founder",
+        "linkedin": "https://www.linkedin.com/in/yutababa/"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Aurorin CAD",
+    "description": "Claude Code for Mechanical Engineering CAD",
+    "website": "https://aurorincad.com/",
+    "source": "Y Combinator",
+    "industry": "B2B, Engineering, Product and Design",
+    "funding": "YC",
+    "brand_summary": "Aurorin CAD is creating next-generation mechanical CAD software with deeply integrated AI agents to accelerate engineering design.",
+    "potential_features": "AI-integrated mechanical design, high-performance CAD engine, automated engineering workflows.",
+    "market_insight": "Aurorin CAD delivers a strategic advantage by integrating an AI-native, custom-built CAD kernel that enables high-speed parametric design through a unique blend of chat interfaces and traditional UI, effectively acting as a 'Claude Code' for mechanical engineering. Despite its superior performance on modern hardware, the startup faces significant technical hurdles in building a feature-complete B-Rep engine from scratch and high market resistance from deeply entrenched incumbents like SolidWorks and Autodesk. To succeed, it must navigate a competitive landscape dominated by cloud-native players like Onshape and Shapr3D while overcoming the steep barrier of ecosystem interoperability.",
+    "location": "Remote",
+    "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/8fb409eebab1bce05d1234942c6f03c6739eec60.png",
+    "latitude": null,
+    "longitude": null,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:16:44",
+    "techStack": [
+      {
+        "technology": "Next.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "React",
+        "category": "frontend"
+      },
+      {
+        "technology": "Tailwind CSS",
+        "category": "frontend"
+      },
+      {
+        "technology": "Clerk",
+        "category": "backend"
+      },
+      {
+        "technology": "Bunny.net",
+        "category": "cloud"
+      },
+      {
+        "technology": "Vercel",
+        "category": "cloud"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 3,
+        "startup_id": 3,
+        "name": "Michael Baron",
+        "role": "Founder",
+        "linkedin": "https://www.linkedin.com/in/michael-andrew-baron/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "DAIVIN!",
+    "description": "Tankless Dive Gear - Breath Autonomy at Sea, Land & Space",
+    "website": "https://www.daivin.tech/",
+    "source": "Y Combinator",
+    "industry": "Industrials, Defense, Hardware",
+    "funding": "YC",
+    "brand_summary": "DAIVIN! develops advanced tankless dive gear that enables autonomous breathing across maritime, terrestrial, and aerospace environments.",
+    "potential_features": "Tankless breathing system, multi-environment life support, portable oxygen-free diving gear.",
+    "market_insight": "DAIVIN! offers a strategic leap in life-support technology with its HYDRA tankless oxygen generation system, which eliminates traditional SCUBA logistics to provide modular breath autonomy across sea, land, and space. Despite its high-value proposition, the firm faces substantial technical risks involving the certification of on-demand electrolysis for life-critical environments and the physiological validation of its hydrogen-based decompression claims. Potential market pitfalls include high R&D costs and competition from both entrenched diving manufacturers like Scubapro and specialized aerospace life-support contractors. Consequently, DAIVIN! remains a high-beta industrial play contingent on achieving rigorous safety standards and transitioning from conceptual hardware to a commercially viable, certified platform.",
+    "location": "San Francisco, CA",
+    "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/00d9df2c4df7159bbd9cfe29bf68638efb2f8ed3.png",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:14:41",
+    "techStack": [
+      {
+        "technology": "Wix",
+        "category": "frontend"
+      },
+      {
+        "technology": "React",
+        "category": "frontend"
+      },
+      {
+        "technology": "Wix",
+        "category": "backend"
+      },
+      {
+        "technology": "Wix Data",
+        "category": "database"
+      },
+      {
+        "technology": "Wix",
+        "category": "cloud"
+      },
+      {
+        "technology": "Wix Analytics",
+        "category": "analytics"
+      },
+      {
+        "technology": "YouTube",
+        "category": "other"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 2,
+        "startup_id": 2,
+        "name": "Leo Kankkunen",
+        "role": "Founder & CEO",
+        "linkedin": "https://www.linkedin.com/in/leo-kankkunen/"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "GrazeMate",
+    "description": "Robot Cowboys that Herd Cattle with AI Drones",
+    "website": "https://grazemate.com",
+    "source": "Y Combinator",
+    "industry": "Industrials, Agriculture",
+    "funding": "YC",
+    "brand_summary": "GrazeMate utilizes autonomous drones to act as 'robot cowboys', automating the herding and management of cattle for ranchers.",
+    "potential_features": "Autonomous cattle herding drones, remote livestock tracking, AI-powered agricultural automation.",
+    "market_insight": "GrazeMate offers a disruptive autonomous drone-in-a-box solution that leverages AI biomarker analysis and reinforcement learning to reduce cattle mustering costs by approximately 50% while significantly minimizing animal stress. Its unique value proposition lies in the ability to execute complex herd movements through a simple mobile interface even in offline environments, addressing critical labor shortages in the global pastoral industry. However, the venture faces technical risks regarding hardware durability in extreme climates and significant regulatory hurdles for autonomous Beyond Visual Line of Sight (BVLOS) operations. While competing with high-tech alternatives like Halter’s GPS collars and other ag-drone startups such as BeeFree Agro, GrazeMate’s focus on autonomous, low-stress stockmanship positions it as a high-potential player in the precision livestock sector.",
+    "location": "Remote",
+    "logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/c775eab2b9c5660b9a550410cd6c913383d47ef4.png",
+    "latitude": null,
+    "longitude": null,
+    "batch": "W26",
+    "created_at": "2026-03-15 07:11:53",
+    "techStack": [
+      {
+        "technology": "WordPress",
+        "category": "backend"
+      },
+      {
+        "technology": "Elementor",
+        "category": "frontend"
+      },
+      {
+        "technology": "Swiper.js",
+        "category": "frontend"
+      },
+      {
+        "technology": "PHP",
+        "category": "backend"
+      },
+      {
+        "technology": "MySQL",
+        "category": "database"
+      },
+      {
+        "technology": "Jetpack",
+        "category": "analytics"
+      },
+      {
+        "technology": "Jetpack Photon",
+        "category": "cloud"
+      },
+      {
+        "technology": "Typeform",
+        "category": "other"
+      },
+      {
+        "technology": "Vimeo",
+        "category": "other"
+      },
+      {
+        "technology": "Google Maps",
+        "category": "other"
+      }
+    ],
+    "jobs": [],
+    "employees": [
+      {
+        "id": 1,
+        "startup_id": 1,
+        "name": "Sam Rogers",
+        "role": "Founder and CEO",
+        "linkedin": "https://www.linkedin.com/in/samson-rogers/"
+      }
+    ]
+  }
+]
